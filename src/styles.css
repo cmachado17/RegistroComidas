@@ -1,0 +1,46 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#form-section {
+    border: 1px solid #333;
+    padding: 20px;
+    display: inline-block;
+    text-align: left;
+    max-width: 400px; /* Puedes ajustar este valor según tus preferencias */
+    width: 100%;
+    margin: 0 auto; /* Esto centrará el formulario horizontalmente */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label, input, select {
+    margin-bottom: 10px;
+}
+
+#form-section button {
+    max-width: none; /* Esto permite que el botón ocupe el ancho completo del contenedor */
+}
+
+
+button {
+    display: block;
+    margin-left: auto;
+    margin-right: 0; /* Esto lo colocará en el margen derecho */
+    cursor: pointer;
+    max-width: 150px;
+}
+
+nav {
+    margin-bottom: 20px;
+}

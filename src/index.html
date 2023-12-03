@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Comidas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Registro de Comidas</h1>
+
+    <nav>
+        <a href="#" onclick="showForm()">Registrar Comida</a>
+        <a href="#" onclick="showHistory()">Ver Historial</a>
+    </nav>
+
+    <section id="form-section">
+        <h2>Registrar Comida</h2>
+        <form id="food-form">
+            <label for="food-name">Nombre de la comida:</label>
+            <input type="text" id="food-name" required>
+
+            <label for="food-date">Fecha:</label>
+            <input type="date" id="food-date" required>
+
+            <label for="food-type">Tipo de comida:</label>
+            <select id="food-type" required>
+                <option value="desayuno">Desayuno</option>
+                <option value="almuerzo">Almuerzo</option>
+                <option value="merienda">Merienda</option>
+                <option value="cena">Cena</option>
+            </select>
+
+            <label for="food-photo">Foto:</label>
+            <input type="file" id="food-photo" accept="image/*">
+
+            <button type="submit">Registrar</button>
+        </form>
+    </section>
+
+    <section id="list-section">
+        <h2>Historial de Comidas</h2>
+        <ul id="food-list"></ul>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
