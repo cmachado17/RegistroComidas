@@ -44,3 +44,43 @@ button {
 nav {
     margin-bottom: 20px;
 }
+
+#food-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#food-table th, #food-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+#food-table th {
+    background-color: #f2f2f2;
+}
+
+#food-table img {
+    max-width: 250px; /* Aumentamos el tamaño de las imágenes */
+    max-height: 250px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Ajustamos el ancho de las columnas */
+#food-table th:first-child, #food-table td:first-child {
+    width: 15%; /* Cambiamos el ancho de la primera columna */
+}
+
+#food-table th:nth-child(2), #food-table td:nth-child(2) {
+    width: 15%; /* Cambiamos el ancho de la segunda columna */
+}
+
+#food-table th:nth-child(3), #food-table td:nth-child(3) {
+    width: 15%; /* Cambiamos el ancho de la tercera columna */
+}
+
+#food-table th:nth-child(4), #food-table td:nth-child(4) {
+    width: 55%; /* Cambiamos el ancho de la cuarta columna */
+}
